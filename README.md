@@ -1,5 +1,30 @@
-# Vue 3 + TypeScript + Vite
+<h1 align="center">Keith Portfolio</h1>
+<p align="center">
+  <img src="https://img.shields.io/badge/node-v23.7.0-yellowgreen" >
+  <img src="https://img.shields.io/badge/npm-v10.9.2-blue" >
+  <img src="https://img.shields.io/badge/vue-v3.5.18-green">
+  <img src="https://img.shields.io/badge/vite-v7.1.2-yellow">
+  <img src="https://img.shields.io/badge/tailwindcss-v4.1.12-blue" >
+</p>
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+<h2>
+<a href="https://keith-portfolio-ccbl.vercel.app/">
+ demo here
+</a>
+</h2>
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+
+## 📄 Description
+
+這是我的個人的前端履歷。
+
+**Key Features:**
+- Vite: 採用最新 Vite，開發與建置快速。
+- Vue 3: 核心框架，搭配 Composition API 架構。
+- TailwindCSS: Utility-first 的響應式設計。
+
+## 📦 Setup & Development Server
+
+1. Installation: Clone the repository and run `npm install` to install dependencies.
+2. Development: Run `npm run dev` to start the development server with hot module replacement.
+3. Open `http://localhost:5174/` in your browser.
