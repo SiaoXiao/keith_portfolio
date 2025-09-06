@@ -1,0 +1,182 @@
+[
+    {
+        "id": "company-8",
+        "companyName": "英屬維京群島商智車有限公司台灣分公司",
+        "role": "前端工程師 Frontend Developer",
+        "start": "2025/03",
+        "end": "2025/07",
+        "highlights": [
+            "目前參與單租戶 SaaS 架構平台的前端開發與維運，專案採用類 Micro Frontend 架構，將多個模組獨立開發並統一整合於主站平台，確保各模組具備良好維護性與彈性擴展能力。",
+            "與中國團隊合作協同開發，負責現有模組之功能維護、畫面優化與新需求開發，並根據業務端反饋進行動態調整，提升整體系統的使用體驗與穩定性。",
+            "在分模組、多倉庫的前端架構下，確保模組之間的整合邏輯一致性，並持續優化開發流程與程式品質，提升跨團隊協作效率與版本管理的一致性。",
+            "主動發掘可優化項目，推動導入 Storybook、Vitest 與 TailwindCSS 建立共用元件系統，並整合至 NPM 供各模組共用，有效提升 UI 一致性與開發效率。"
+        ],
+        "tech": [
+            "Vue-Cli",
+            "Vue3",
+            "Pinia",
+            "Vue-router",
+            "Typescript",
+            "Sass",
+            "Axios",
+            "element-plus",
+            "decimal.js",
+            { "name": "Day.js", "url": "https://day.js.org/" },
+            "tailwindcss",
+            "Storybook",
+            "Vitest",
+            "Lark"
+        ]
+    },
+    {
+        "id": "company-7",
+        "companyName": "雙子數位科技有限公司",
+        "role": "Vue 網頁前端工程師",
+        "start": "2024/03",
+        "end": "2024/12",
+        "highlights": [
+            "與 IBM 開發團隊合作，參與大型 CRM 與 ERP 系統的重構專案，專案採用微服務架構，根據不同業務領域進行平台區分，確保系統架構的高效運行與可擴展性。",
+            "負責採購平台的前端開發，包含撰寫採購相關頁面與功能，並針對業務需求設計與實作 成本單位計算 等核心功能，確保功能正確性與使用者操作流暢度。",
+            "協助系統設計 (SD 文件) 撰寫，與後端團隊協作進行 Restful API 串接與整合，確保採購平台與其他業務平台之間數據交換的穩定性與高效能。",
+            "在跨平台、跨部門環境中進行技術溝通與協作，有效解決開發過程中的技術挑戰，確保各平台之間的無縫銜接，推動專案穩定落地。",
+            "參與軟體分析、設計與優化，專注於微服務架構下前端系統的效能提升，並持續改善使用者體驗。"
+        ],
+        "tech": [
+            "Vite",
+            "Vue3",
+            "Pinia",
+            "Vue-router",
+            "Typescript",
+            "Sass",
+            "Axios",
+            "Primevue",
+            "vee-validate",
+            "yup",
+            "decimal.js",
+            "openapi",
+            "Azure DevOps"
+        ]
+    },
+    {
+        "id": "company-6",
+        "companyName": "揚帆科技有限公司",
+        "role": "前端工程師",
+        "start": "2022/09",
+        "end": "2024/02",
+        "highlights": [
+            "參與軟體的分析、設計和程式撰寫，以確保應用程式的穩定性與性能。",
+            "負責公司現有專案的維護和優化，顯著提升了系統效能和用戶滿意度。",
+            "將舊專案從Vue2 + Webpack升級到Vite和Vue3，這不僅提高了開發效率30%，同時也顯著優化了應用程式性能。",
+            "使用Nuxt3完全重構了官方網站，由HTML + CSS + Jquery架構轉變，提升了網站的響應速度和用戶體驗。",
+            "獨立開發並上線官方網站的會員系統，包括註冊、登入、用戶管理等功能，提高了用戶參與度。",
+            "獨立負責後台系統專案，使用Vite和Vue3，有效地提高了後台操作的效率和穩定性。",
+            "帶領2位前端設計師及1位前端工程師重構影音串流網站，採用Vite、Vue3和PWA技術，提升了網站的加載速度和用戶體驗。",
+            "目前領導2位前端設計師，完成重構後正在開發新專案，並成功整合Prettier和ESLint提高代碼質量和一致性。",
+            "跨部門溝通與協作，有效解決開發過程中的技術問題，提升團隊之間的協同作業效率。",
+            "Restful API 串接，確保網站能順利與後端系統進行數據交換。"
+        ],
+        "tech": [
+            "Vite",
+            "Vue3",
+            "Vue-Router",
+            "Nuxt3",
+            "Scss",
+            "Pinia",
+            "Axios",
+            "PWA",
+            "Prettier",
+            "ESLint",
+            "Swiper",
+            "Video.js",
+            "Vuex"
+        ]
+    },
+    {
+        "id": "company-5",
+        "companyName": "耀點國際有限公司",
+        "role": "網頁前端工程師",
+        "start": "2021/10",
+        "end": "2022/8",
+        "highlights": [
+            "參與軟體的分析、設計和程式撰寫，以確保應用程式的穩定性與性能。",
+            "負責維護公司現有專案、優化並新增功能及頁面，提升系統效能並解決出現的問題。",
+            "獨立進行開發遊戲預註冊一頁式網站專案的開發，使用Vite和Vue3進行開發。",
+            "獨立進行後台系統專案的開發，使用Vite和Vue3進行開發。",
+            "預註冊頁面註冊資料使用Google App Script 寫api 存進Google試算表 達到寫入資料庫的類功能。",
+            "Restful API 串接，確保網站能順利與後端系統進行數據交換。"
+        ],
+        "tech": [
+            "Webpack",
+            "Vue-cli",
+            "Vue2",
+            "Vuex",
+            "Vue-i18n",
+            "Bootstrap",
+            "Vue-router",
+            "Typescript",
+            "Sass",
+            "Axios",
+            "Vite",
+            "Vue3",
+            "TailwindCss",
+            "Docker",
+            "Google App Script",
+            "Google Analytics",
+            "Google Tag Manager"
+        ]
+    },
+    {
+        "id": "company-4",
+        "companyName": "金富達科技股份有限公司",
+        "role": "前端工程師",
+        "start": "2021/1",
+        "end": "2021/8",
+        "highlights": [
+            "參與軟體的分析、設計和程式撰寫，以確保應用程式的穩定性與性能。",
+            "負責維護公司開發中的後台、優化並新增、修改功能，提升系統效能並解決出現的問題。",
+            "使用Cocos Creator 開發單人模擬器。",
+            "獨立進行後台系統專案的開發，使用Webpack和Vue-CLI進行開發。",
+            "Restful API 串接，確保網站能順利與後端系統進行數據交換。"
+        ],
+        "tech": [
+            "Webpack",
+            "Vue-cli",
+            "Vue2",
+            "Vuex",
+            "Vue-router",
+            "Axios",
+            "Vuetify",
+            "Ajax",
+            "Bootstrap4",
+            "JQuery",
+            "Cocos Creator"
+        ]
+    },
+    {
+        "id": "company-3",
+        "companyName": "索朗科技有限公司",
+        "role": "前端工程師",
+        "start": "2020/9",
+        "end": "2020/12",
+        "highlights": ["協同資深工程師開發管端後台"],
+        "tech": []
+    },
+    {
+        "id": "company-2",
+        "companyName": "兆威數位媒體有限公司",
+        "role": "前端工程師",
+        "start": "2020/8",
+        "end": "2020/9",
+        "highlights": [],
+        "tech": []
+    },
+    {
+        "id": "company-1",
+        "companyName": "靖洋科技股份有限公司",
+        "role": "半導體設備工程師",
+        "start": "2014/4",
+        "end": "2019/7",
+        "highlights": [],
+        "tech": []
+    }
+]
