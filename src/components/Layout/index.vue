@@ -1,7 +1,7 @@
 <template>
   <AppHeader :menuArray="menuList" class="left-1/2 -translate-x-1/2"></AppHeader>
  <RouterView />
-  <AppFooter class=""></AppFooter>
+  <AppFooter class="mx-auto"></AppFooter>
   <div class="scrollBtn" :class="{ isActive }" @click.passive="handleScrollTop">
     Top
   </div>
