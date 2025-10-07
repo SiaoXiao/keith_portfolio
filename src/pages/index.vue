@@ -32,12 +32,14 @@
                     >
                         聯繫我
                     </a>
+                    <!-- <button @click="clickme">click</button>
+                    <button @click="makeTiast">click</button> -->
                 </div>
 
                 <!-- 社群 -->
                 <div class="mt-5 flex items-center gap-3">
                     <a
-                        href="https://github.com/your-id"
+                        href="https://github.com/SiaoXiao"
                         aria-label="GitHub"
                         class="group p-2 rounded-full border border-zinc-300/80 hover:bg-zinc-50"
                     >
@@ -232,7 +234,24 @@ import experiences from '@/data/experience.json'
 import rawSkills from '@/data/skills.json'
 import type { TSkills } from '@/types/skills'
 import type { IExperience } from '@/types/experience'
-
+// import * as Sentry from '@sentry/vue'
 const skills = ref<TSkills[]>(rawSkills)
 const items = ref<IExperience[]>(experiences)
+
+// const clickme = () => {
+//     throw new Error('click item error')
+// }
+// const makeTiast = () => {
+//    ovo()
+// }
+
+// const post = {
+//     id: 1,
+//     title: 'Hello word',
+//     body: 'yoyo~ ovo'
+// }
+
+// Sentry.setContext('post', post)
+// Sentry.setTag('randomTag', 'hello-tag')
+
 </script>
