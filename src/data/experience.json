@@ -1,5 +1,34 @@
 [
     {
+        "id": "company-10",
+        "companyName": "夕煇有限公司",
+        "role": "前端工程師 Frontend Developer",
+        "start": "2025/11",
+        "end": "2026/01",
+        "highlights": [
+            "負責維護公司開發中的交易所後台、優化並新增、修改功能，提升系統效能並解決出現的問題。",
+            "新後台模組開發與架構設計：建立 ts-rest Contract、Zod schema，設計 typed 前端 API，確保請求/回應型別安全與驗證。",
+            "前端 API 與後端整合：實作 API 與各項 endpoint（status、disablePreview、cancelOrder 等），處理並行呼叫、錯誤處理與 loading 狀態管理。",
+            "組件化與可重用性：將頁面行為抽成多個 composables，提升可測試性與維護性。",
+            "Router 與權限整合：在 router 與權限常數中接入路由與 action 權限，依權限動態顯示 UI 與操作。",
+            "UX 流程實作：設計並實作啟用/停用彩種的多步確認流程（含後端 preview、批次取消訂單、使用者確認流程），降低誤操作風險並同步 UI 狀態。",
+            "i18n 與 UI 支援：加入多語系鍵值、表單驗證、分頁、可拖曳欄位、Dialog create/edit 與即時刷新邏輯。",
+            "文件與跨團隊協作：撰寫 API/Contract 對應註記、與後端對齊 schema，與產品/後端協調流程細節。"
+        ],
+        "tech": [
+            "Vite",
+            "Vue3",
+            "TypeScript",
+            "Pinia",
+            "Element Plus",
+            "Sass",
+            "ts-rest",
+            "Zod",
+            "Axios (typed wrapper)、await-to-js",
+            "Jira"
+        ]
+    },
+    {
         "id": "company-9",
         "companyName": "宏思科技有限公司",
         "role": "前端工程師 Frontend Developer",

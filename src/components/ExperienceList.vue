@@ -69,6 +69,7 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
 import type { IExperience, Tech } from '@/types/experience'
+import { formatYearMonth, parseYearMonthNumber } from '@/utils/date'
 
 type SortOrder = 'asc' | 'desc'
 
@@ -84,22 +85,9 @@ const props = withDefaults(defineProps<{
 const order = ref<SortOrder>(props.defaultOrder)
 watch(() => props.defaultOrder, v => { if (v) order.value = v })
 
-/** 解析多種年月格式 → 202507 這種可比較的數字；失敗回 null */
-const ymToNum = (raw?: string | null): number | null => {
-  if (!raw) return null
-  const s = String(raw).trim()
-  // 抓年與月：2025-07 / 2025/7 / 2025.07 / 2025年07月
-  const m = s.match(/(\d{4})\D+(\d{1,2})/)
-  if (!m) return null
-  const y = Number(m[1])
-  const mo = Number(m[2])
-  if (!y || !mo || mo < 1 || mo > 12) return null
-  return y * 100 + mo
-}
-
 /** 排序用 key：優先 end，沒有 end（在職）則用 start */
 const sortKey = (e: IExperience): number => {
-  return ymToNum(e.end) ?? ymToNum(e.start) ?? 0
+  return parseYearMonthNumber(e.end) ?? parseYearMonthNumber(e.start) ?? 0
 }
 
 const sorted = computed(() => {
@@ -130,13 +118,5 @@ const sorted = computed(() => {
 const isObj = (t: Tech): t is { name: string; url?: string } =>
   typeof t === 'object' && t !== null && 'name' in t
 
-/** 顯示用：把各種格式統一成 YYYY/MM；解析失敗則原樣返回 */
-const formatYM = (raw: string): string => {
-  const n = ymToNum(raw)
-  if (n == null) return raw
-  const y = Math.floor(n / 100)
-  const m = String(n % 100).padStart(2, '0')
-  return `${y}/${m}`
-}
+const formatYM = (raw: string): string => formatYearMonth(raw)
 </script>
-

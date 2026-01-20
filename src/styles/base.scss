@@ -1,4 +1,9 @@
-@import "./tailwindcss.css";
+/** components */
+
+@use './components/Layout.scss';
+@use './components/AppHeader.scss';
+
+/* Global base styles only */
 
 * {
   -webkit-tap-highlight-color: transparent;
@@ -10,12 +15,12 @@
   )
   and (-webkit-overflow-scrolling: touch) {
   #app {
-    /* 适配齐刘海 */
+    /* 對齊瀏海 */
     padding-top: 20px;
     padding-top: constant(safe-area-inset-top);
     padding-top: env(safe-area-inset-top);
 
-    /* 适配底部小黑条 */
+    /* 適應底部小黑條 */
     padding-bottom: 0;
     padding-bottom: costant(safe-area-inset-bottom);
     padding-bottom: env(safe-area-inset-bottom);
@@ -23,7 +28,7 @@
 }
 @media screen and (orientation: portrait) {
   #app {
-    /* 防止页面被刘海遮住 */
+    /* 防止頁面被瀏海遮住 */
     padding-top: constant(safe-area-inset-top);
   }
 }

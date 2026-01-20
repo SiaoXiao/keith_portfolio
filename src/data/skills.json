@@ -19,6 +19,9 @@
   "Bootstrap",
   "jQuery",
   "Tailwind",
+  "ts-rest",
+  "Zod",
+  "await-to-js",
   "Vite",
   "Docker",
   "Git",
@@ -26,5 +29,6 @@
   "GitHub",
   "GitLab",
   "Azure DevOps",
-  "Lark"
+  "Lark",
+  "Jira"
 ]

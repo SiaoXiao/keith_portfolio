@@ -44,6 +44,7 @@
 import { computed } from 'vue'
 import { MoreFilled } from '@element-plus/icons-vue'
 import type { IExperience } from '@/types/experience'
+import { formatDateRange, toYearMonthNumberStrict } from '@/utils/date'
 
 const props = withDefaults(
     defineProps<{
@@ -55,16 +56,10 @@ const props = withDefaults(
     }
 )
 
-// YYYY/MM -> 202507（數字），用來排序
-const ymToNumStrict = (s: string): number => {
-    const [y, m] = s.split('/')
-    return Number(y) * 100 + Number(m)
-}
-
 // 在職（end 為空字串或未提供）排最前；其餘用 end（沒有就用 start）
 const sortValue = (e: IExperience): number => {
     if (!e.end) return Number.POSITIVE_INFINITY // 在職最大
-    return ymToNumStrict(e.end || e.start)
+    return toYearMonthNumberStrict(e.end || e.start)
 }
 
 /** 新→舊 排序 */
@@ -75,7 +70,6 @@ const sorted = computed(
 // /** 只取前 N 筆 */
 const visible = computed(() => sorted.value.slice(0, props.limit))
 
-const formatRange = (start: string, end?: string | null) => {
-  return end && end.length ? `${start} - ${end}` : `${start} - 迄今`
-}
+const formatRange = (start: string, end?: string | null) =>
+  formatDateRange(start, end)
 </script>
